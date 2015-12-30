@@ -4,9 +4,8 @@ weatherApp.controller('homeController',['$scope','$location','cityService',funct
 	$scope.$watch('city',function(){
 		cityService.city = $scope.city;
 	});
-    $scope.submit = function()
-    {
+    $scope.submit = function(){
         $location.path('/forecast');
-    }
+    };
 
 }]);
